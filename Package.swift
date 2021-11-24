@@ -27,7 +27,20 @@ let package = Package(
             name: "YPImagePicker",
             dependencies: ["Stevia", "PryntTrimmerView"],
             path: "Source",
-            exclude: ["Info.plist", "YPImagePickerHeader.h"]
+            exclude: ["Info.plist", "YPImagePickerHeader.h"],
+            resources: [
+                .copy("../Images/logo/icon_svg.svg"),
+                .copy("../Images/logo/icon.png"),
+                .copy("../Images/logo/logotype_horizontal_svg.svg"),
+                .copy("../Images/logo/logotype_horizontal.png"),
+                .copy("../Images/coreTeam1.png"),
+                .copy("../Images/coreTeam2.png"),
+                .copy("../Images/filters.PNG"),
+                .copy("../Images/library.PNG"),
+                .copy("../Images/photo.PNG"),
+                .copy("../Images/video.PNG"),
+                .copy("../Images/visual.jpg"),
+            ]
         )
     ]
 )
