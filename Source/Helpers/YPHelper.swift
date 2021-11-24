@@ -19,7 +19,7 @@ internal func ypLocalized(_ str: String) -> String {
 }
 
 internal func imageFromBundle(_ named: String) -> UIImage {
-    return UIImage(named: named, in: Bundle(for: YPPickerVC.self), compatibleWith: nil) ?? UIImage()
+    return UIImage(named: named, in: .module, compatibleWith: nil) ?? UIImage()
 }
 
 struct YPHelper {
